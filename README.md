@@ -5,7 +5,7 @@ Welcome to my personal web portfolio — a simple and elegant front-end project 
 ---
 
 ## 🌐 Live Demo
-🚀 [View Website](https://yousefmando.github.io/yousef-portfolio/)
+🚀 [View Website](https://yousefmamdo.github.io/yousef-portfolio/)
 
 ---
 
