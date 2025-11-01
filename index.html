@@ -2,52 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yousef Mando | Full-Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- ===== Navbar ===== -->
   <header class="nav">
-    <div class="container">
-      <h1>Yousef Mando</h1>
+    <div class="container nav__content">
+      <h1 class="logo">Yousef Mando</h1>
       <nav>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Hi! I'm a Full-Stack Developer</h2>
-      <p>I build modern web applications using HTML, CSS, JavaScript, React, and Node.js.</p>
-      <button id="cta">View My Projects</button>
+  <!-- ===== Hero ===== -->
+  <section id="home" class="hero">
+    <div class="container hero__content">
+      <div>
+        <p class="hero__hello">Hello, I'm</p>
+        <h2 class="hero__name">Yousef Ayman Mando</h2>
+        <p class="hero__role">Full-Stack Developer · Software Engineer</p>
+        <p class="hero__text">
+          I build simple, clean, and real-world web applications using
+          React, Node.js, Express, and MongoDB.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- ===== About ===== -->
   <section id="about" class="section">
     <div class="container">
-      <h3>About Me</h3>
-      <p>
-        I’m a Software Engineer passionate about creating high-quality, user-focused web solutions.
-        My goal is to craft efficient, scalable, and visually engaging applications that deliver real value.
+      <h2 class="section__title">About Me</h2>
+      <p class="section__text">
+        I am a software engineer from Amman, Jordan. I enjoy turning ideas into working
+        web applications and documenting every project so it is easy to show to recruiters.
+        I work mainly with <strong>React</strong> on the frontend and
+        <strong>Node.js / Express / MongoDB</strong> on the backend.
       </p>
+      <p class="section__text">
+        I am also doing my Master’s at <strong>Al-Zaytoonah University of Jordan</strong>,
+        focusing on <strong>software testing, optimization, and AI-based solutions</strong>.
+        I like to combine academic knowledge with practical projects (GitHub + screenshots +
+        README) to make my portfolio stronger.
+      </p>
+
+      <div class="about__cards">
+        <div class="about__card">
+          <h3>🎓 Education</h3>
+          <p>Master’s in Software Engineering (in progress)</p>
+          <p>Al-Zaytoonah University of Jordan</p>
+        </div>
+        <div class="about__card">
+          <h3>🌍 Location</h3>
+          <p>Amman, Jordan</p>
+          <p>Open to remote</p>
+        </div>
+        <div class="about__card">
+          <h3>🧪 Interests</h3>
+          <p>Software Testing, Requirements, AI in SE</p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section bg-light">
+    <div class="container">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills__grid">
+        <div class="skill__box">
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript (ES6+), React, Responsive Design</p>
+        </div>
+        <div class="skill__box">
+          <h3>Backend</h3>
+          <p>Node.js, Express.js, REST APIs, MongoDB</p>
+        </div>
+        <div class="skill__box">
+          <h3>Tools</h3>
+          <p>Git & GitHub, Postman, Vercel, VS Code</p>
+        </div>
+        <div class="skill__box">
+          <h3>Software Engineering</h3>
+          <p>Software Testing, Requirements Engineering, Documentation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
   <section id="projects" class="section">
-    <div class="container cards">
-      <article class="card">
-        <h4>Task Manager App</h4>
-        <p>Add, remove, and store tasks locally with a clean UI.</p>
-        <a href="#" target="_blank" rel="noopener">View Project</a>
+    <div class="container">
+      <h2 class="section__title">Projects</h2>
+
+      <!-- 1 -->
+      <article class="project">
+        <h3>🛒 AbuDarwish Storefront</h3>
+        <p>
+          A full-stack e-commerce web application built for a local roastery and dairy shop.
+          It allows displaying products, adding items to the cart, and preparing the system
+          for an admin panel. The goal was to create a simple, responsive interface
+          that can be shown to real customers and added to GitHub later.
+        </p>
+        <p class="project__tech"><strong>Technologies:</strong> React, Node.js, Express, MongoDB</p>
       </article>
-      <article class="card">
-        <h4>E-Commerce UI</h4>
-        <p>Product listing and shopping cart interface.</p>
-        <a href="#" target="_blank" rel="noopener">View Project</a>
+
+      <!-- 2 -->
+      <article class="project">
+        <h3>📊 ManageIQ Dashboard Demo</h3>
+        <p>
+          A simulated dashboard that demonstrates how to organize and display system resources,
+          with screenshots prepared for README. This project was used as a portfolio item and
+          to practice documentation in English.
+        </p>
+        <p class="project__tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
       </article>
-      <article class="card">
-        <h4>Admin Dashboard</h4>
-        <p>Responsive data tables and charts for analytics.</p>
+
+      <!-- 3 -->
+      <article class="project">
+        <h3>💼 Personal Portfolio Website</h3>
+        <p>
+          A clean and minimal portfolio page (like this one) that presents my name, skills,
+          projects, and contact information. Built to be deployed on Vercel and to send to
+          recruiters when applying for remote jobs.
+        </p>
+        <p class="project__tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+      </article>
+
+      <!-- 4 -->
+      
+
+        <article class="project">
+        <h3>🌾 "Farmer" App</h3>
+        <p>
+          An application aimed at facilitating the process of farming — especially calculating
+          percentages and values of farms for buying and selling. Built as a freelance/demo app
+          and added to LinkedIn as a project.
+        </p>
+        <p class="project__tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+      </article>
+
+      <!-- 5 -->
+      <article class="project">
+        <h3>💪 "Fitness" Website</h3>
+        <p>
+          A website that includes different aspects of sports and fitness, and presents the most
+          famous sports around the world with a short history for each. The focus was on content
+          structure and clean layout.
+        </p>
+        <p class="project__tech"><strong>Technologies:</strong> HTML, CSS</p>
+      </article>
+
+      <!-- 6 -->
+      <article class="project">
+        <h3>🦠 "Covid News" App</h3>
+        <p>
+          An application that aims to show the latest Covid-19 news and numbers (infected, recovered,
+          deaths). Built during the pandemic period to practice fetching and displaying dynamic data.
+        </p>
+        <p class="project__tech"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="section__title">Contact</h2>
+      <p class="section__text">
+        If you want to collaborate, view the full projects, or request the GitHub links,
+        feel free to contact me:
+      </p>
+      <div class="contact__info">
+        <p><strong>Email:</strong> <a href="mailto:yousefmando1998@gmail.com">yousefmando1998@gmail.com</a></p>
+        <p><strong>Phone:</strong> 0792989736</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/yousefmamdo</p>
+        <p><strong>Location:</strong> Amman, Jordan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Yousef Mando — Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
